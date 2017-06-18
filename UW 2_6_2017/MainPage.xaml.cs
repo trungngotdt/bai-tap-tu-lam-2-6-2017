@@ -54,7 +54,7 @@ namespace UW_2_6_2017
         private void MyFrame_Navigated(object sender, NavigationEventArgs e)
         {
             var currentView = SystemNavigationManager.GetForCurrentView();
-            String Name_current_frame = (sender as Frame).CurrentSourcePageType.Name.ToString();
+            string Name_current_frame = (sender as Frame).CurrentSourcePageType.Name.ToString();
             if (!MyFrame.CanGoBack||Name_current_frame.Equals(MyFrame.Name.ToString()))
             {
                 currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
